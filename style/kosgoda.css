@@ -1,0 +1,315 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: rgb(65, 114, 131);
+  font-family: sans-serif;
+    font-weight: 100;
+}
+
+nav {
+  height: 80px;
+  background-color: rgb(129, 163, 195);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px 50px 0px 80px;
+}
+
+nav .logo {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+nav p {
+  font-size: 20px;
+  text-align: center;
+}
+
+nav img{
+  height: 70px;
+  width: 80px;
+  padding-right: 20px;
+}
+
+
+nav ul{
+  width: 100%;
+  padding:10px;
+  margin: auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  
+}
+
+nav ul li {
+  list-style: none;
+  display: inline-block;
+  margin: 20px;
+  text-align: center;
+}
+
+nav ul li a {
+  text-decoration: none;
+  text-transform: uppercase;
+  color: white;
+  font-weight: 600;
+  padding: 1px;
+}
+
+nav ul li a:hover {
+  background: rgb(246, 243, 249);
+  transition: 0.5s;
+}
+
+nav a:hover{
+  color:  black;
+}
+
+nav .menubar i{
+  font-size: 20px;
+  color: black;
+  cursor: pointer;
+  display: none;
+}
+
+#click {
+  display: none;
+}
+
+nav .dropdown .scroll {
+  display: none;
+  padding-bottom: 8px;
+}
+
+nav .dropdown:hover .scroll {
+  display: block;
+  position: absolute;
+  margin-top: 1px;
+  padding-top: 2px;
+  margin-bottom: 15px;
+  margin-left: 17px;
+  background-color:black ;
+  border-radius: 5px;
+}
+
+.scroll ul {
+  display: block;
+}
+
+.scroll ul li{
+  text-align: center;
+  display: block;
+}
+
+nav .mobile {
+  display: none;
+}
+
+
+/*responsive*/
+
+@media (max-width:1370px) {
+
+  nav .menubar i{
+      display: block;
+  }
+
+  #click:checked ~ .menubar i::before {
+      content: "\f00d";
+  }
+
+  nav ul{
+      position: fixed;
+      top: 80px;
+      left: -100%;
+      background-color: rgb(47, 129, 129);
+      height: 500vh;
+      width: 100%;
+      display: block;
+      text-align: center;
+      transition: all 0.5s ease;
+
+  }
+
+  #click:checked ~ ul{
+      left: 0;
+  }
+
+
+
+  nav ul li {
+      margin: 10px 100px;
+  }
+
+  nav li a{
+      font-size: 20px;
+      display: block;
+      font-weight: 600;
+  }
+
+  nav ul li a:hover{
+      color: black;
+  }
+
+
+  nav .dropdown:hover .scroll {
+      display: block;
+      position: absolute;
+      margin-top: 4px;
+      padding-top: 5px;
+      margin-bottom: 15px;
+      margin-left: 17px;
+      background-color: black;
+      border-radius: 8px;
+  }
+
+  nav .dropdown {
+      display: none;
+  }
+
+  nav .mobile {
+      display: block;
+  }
+}
+
+/*ANIMATION HEADING DECO*/
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-size: 50px;
+  cursor: pointer;
+}
+
+span{
+  display: inline-block;
+  font-weight: bolder;
+  animation: mover 6s linear infinite;
+}
+
+@keyframes mover{
+  0%{
+    text-shadow: 0 0 30px rgba(0,0,0,0);
+  }
+
+  50%{
+    text-shadow: 0 0 30px rgba(0,0,0,0.30);
+    transform: translateY(30px);
+  }
+
+  100%{
+    text-shadow: 0 0 30px rgba(0,0,0,0);
+  }
+
+}
+
+span:nth-child(1){
+  animation-delay: 0.5s;
+}
+span:nth-child(2){
+  animation-delay: 1s;
+}
+
+span:nth-child(3){
+  animation-delay: 1.5s;
+}
+
+span:nth-child(4){
+  animation-delay: 2s;
+}
+
+span:nth-child(5){
+  animation-delay: 2.5s;
+}
+
+span:nth-child(6){
+  animation-delay: 3s;
+}
+
+span:nth-child(7){
+  animation-delay: 3.5s;
+}
+
+
+/*FORMATTING/DECORATING OTHER HEADINGS/CONTENT*/
+h2{
+  text-align: center;
+  font-family: sans-serif;
+  color: black;
+  font-size: 30px;
+  font-weight: 150px;
+}
+
+/*CONTENT*/
+
+.myDiv1 {
+  border: 5px outset rgb(15, 4, 48);
+  background-color: rgb(175, 205, 214);    
+  text-align: center;
+  margin: 0% 10% 0% 10%;
+}
+.myDiv2{
+  display: flex;
+  
+}
+
+.myDiv3 {
+  border: 5px outset rgb(15, 4, 48);
+  background-color: rgb(131, 157, 165);    
+  text-align: center;
+  margin: 0% 10% 0% 10%;
+}
+
+.myDiv4{
+  display: flex;
+  
+}
+
+.myDiv5 {
+  border: 5px outset rgb(15, 4, 48);
+  background-color: rgb(175, 205, 214);    
+  text-align: center;
+  margin: 0% 10% 0% 10%;
+ 
+}
+
+.myDiv6{
+  display: flex; 
+}
+
+.myDiv7 {
+  border: 5px outset rgb(15, 4, 48);
+  background-color: rgb(131, 157, 165);    
+  text-align: center;
+  margin: 0% 10% 0% 10%;
+
+}
+
+.myDiv8{
+  display: flex; 
+}
+
+img{
+width: 500px;
+height: 500px;
+display: block;
+margin: 0 auto;
+} 
+
+/*FOOTER ALIGNMENT*/
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: rgb(129, 163, 195);
+  color: rgb(12, 8, 8);
+  
+    }
