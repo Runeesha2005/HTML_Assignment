@@ -13,6 +13,7 @@ body {
 
 /*NORMAL NAVIGATION BAR*/
 
+
 nav {
   height: 80px;
   background-color: rgb(129, 163, 195);
@@ -118,8 +119,8 @@ nav .mobile {
   display: none;
 }
 
-
-/*responsive*/
+/*RESPONSIVE*/
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
 
 @media (max-width:1370px) {
 
@@ -193,44 +194,27 @@ img{
     height: 420px;
 }
 
-/*TABLE ALIGNMENT/DECO*/
 
 
-/*STYLING HEADER*/
+/*STYLING HEADINGS*/
 
 h2{
     font-family: sans-serif;
-    font-size: 1.3em;
+    font-size: 1.5em;
     font-weight: 700;
   }
   
-h3{
-      font-family:sans-serif;
-      font-size: 1.3em;
-      font-weight: 700;
-  }
-  
- h4{
-      font-family: sans-serif;
-      font-size: 1.3em;
-      font-weight: 700;
-      }
-  
-  h5{
-       font-family: sans-serif;
-       font-size: 1.3em;
-       font-weight: 700;
-          }
+
 
   .myDiv{
        text-align: center;
          }
     iframe{
-            width: 500px;
-           height: 500px; 
+            width: 450px;
+           height: 450px; 
          }
 
-         /*table styling*/
+         /*TABLE STYLING*/
 
          table, th, td {
           border:1px solid black;
@@ -241,30 +225,37 @@ h3{
             border-collapse: collapse;
             width: 80%;
           }
-          
-          #categories td, #categories th {
+
+#categories td, #categories th {
             border: 1px solid #f8f8f9;
             padding: 15px;
-          }
-         #categories tr:nth-child(even){
+            }
+
+#categories tr:nth-child(even){
             background-color: #7694a2;
-        }
-         #categories tr:hover {
+            }
+
+#categories tr:hover {
             background-color: lightblue;
-        }
-         #categories th {
+            }
+
+ #categories th {
             padding-top: 10px;
             padding-bottom: 10px;
             text-align: left;
             background-color:  rgb(136, 197, 224);
             color:black;
-          }
-  /*centering the table*/        
+            }
+
+/*CENTERING THE TABLE*/       
+
 table{ 
     margin-right: auto;
     margin-left: auto;
 
 }
+
+/*FOOTER ALIGNMENT/STYLING*/
 
 footer {
   text-align: center;

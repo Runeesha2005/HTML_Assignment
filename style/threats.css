@@ -77,6 +77,7 @@ nav a:hover{
 
 /*RESPONSIVE MENU/NAVIGATION BAR FORMAT/STYLING*/
 
+
 nav .menubar i{
   font-size: 20px;
   color: black;
@@ -118,7 +119,8 @@ nav .mobile {
 }
 
 
-/*RESPONSIVE*/
+
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
 
 @media (max-width:1370px) {
 

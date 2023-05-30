@@ -114,8 +114,8 @@ nav .mobile {
   display: none;
 }
 
-
-/*responsive*/
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
+/*RESPONSIVE*/
 
 @media (max-width:1370px) {
 
@@ -252,8 +252,8 @@ h2{
 /*CONTENT*/
 
 .myDiv1 {
-  border: 5px outset rgb(15, 4, 48);
-  background-color: rgb(175, 205, 214);    
+  border: 5px outset rgb(3, 1, 15);
+  background-color: rgb(131, 157, 165);    
   text-align: center;
   margin: 0% 10% 0% 10%;
 }
@@ -263,7 +263,7 @@ h2{
 }
 
 .myDiv3 {
-  border: 5px outset rgb(15, 4, 48);
+  border: 5px outset rgb(3, 1, 15);
   background-color: rgb(131, 157, 165);    
   text-align: center;
   margin: 0% 10% 0% 10%;
@@ -275,8 +275,8 @@ h2{
 }
 
 .myDiv5 {
-  border: 5px outset rgb(15, 4, 48);
-  background-color: rgb(175, 205, 214);    
+  border: 5px outset rgb(3, 1, 15);
+  background-color: rgb(131, 157, 165);    
   text-align: center;
   margin: 0% 10% 0% 10%;
  
@@ -287,7 +287,7 @@ h2{
 }
 
 .myDiv7 {
-  border: 5px outset rgb(15, 4, 48);
+  border: 5px outset rgb(3, 1, 15);
   background-color: rgb(131, 157, 165);    
   text-align: center;
   margin: 0% 10% 0% 10%;
@@ -299,8 +299,8 @@ h2{
 }
 
 img{
-width: 500px;
-height: 500px;
+width: 450px;
+height: 450px;
 display: block;
 margin: 0 auto;
 } 

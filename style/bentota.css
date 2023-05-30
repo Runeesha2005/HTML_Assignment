@@ -11,6 +11,8 @@ body {
     font-weight: 100;
 }
 
+/*NORMAL NAVIGATION BAR*/
+
 nav {
   height: 80px;
   background-color: rgb(129, 163, 195);
@@ -73,6 +75,8 @@ nav a:hover{
   color:  black;
 }
 
+/*RESPONSIVE MENU/NAVIGATION BAR FORMAT/STYLING*/
+
 nav .menubar i{
   font-size: 20px;
   color: black;
@@ -115,7 +119,7 @@ nav .mobile {
 
 
 /*responsive*/
-
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
 @media (max-width:1370px) {
 
   nav .menubar i{
@@ -181,8 +185,8 @@ nav .mobile {
 }
 
 
+/* HEADING DECO/ANIMATION*/
 
-/*heading 1 decoration,animation*/
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -243,6 +247,7 @@ span:nth-child(7){
 }
 
 
+/*OTHER HEADINGS STYLING */
 h2{
   font-family: sans-serif;
   color: black;
@@ -259,6 +264,7 @@ img{
   
 }
 
+/*FO0TER ALIGNMENT*/
 
 footer {
   text-align: center;

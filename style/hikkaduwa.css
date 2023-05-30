@@ -119,7 +119,7 @@ nav .mobile {
 
 
 /*responsive*/
-
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
 @media (max-width:1370px) {
 
   nav .menubar i{
@@ -187,14 +187,14 @@ nav .mobile {
 /*OTHER CONTENT*/
 
 iframe{
-     width: 500px;
-    height: 500px; 
+     width: 450px;
+    height: 450px; 
       
 }
 
 img{
     width: 400px;
-    height: 420px;
+    height: 400px;
 }
 h2{
     font-family: sans-serif;

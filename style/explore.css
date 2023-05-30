@@ -123,7 +123,7 @@ nav .mobile {
 }
 
 /*responsive*/
-
+/*MEDIA QUERIES FOR MENU BAR/RESPONSIVE*/
 @media (max-width:1370px) {
 
   nav .menubar i{
