@@ -271,7 +271,7 @@ h2{
 }
 
 .myDiv4{
-  display: flex;
+  display: block;
   
 }
 
@@ -296,7 +296,7 @@ h2{
 }
 
 .myDiv8{
-  display: flex; 
+  display: block; 
 }
 
 img{
