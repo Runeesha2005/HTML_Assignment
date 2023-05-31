@@ -187,18 +187,15 @@ nav .mobile {
 }
 
 
-img{
-    width: 400px;
-    height: 420px;
-}
 
+
+  
+/*CONTENT*/
 h2{
     font-family: sans-serif;
     font-size: 1.5em;
     font-weight: 700;
   }
-  
-/*CONTENT*/
 
 .myDiv{
     
@@ -206,6 +203,12 @@ h2{
  
 
 }
+
+img{
+    width: 400px;
+    height: 420px;
+}
+
 
 /*KOSGODA AND BENTOTA BUTTON*/
 
