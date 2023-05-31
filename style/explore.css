@@ -55,6 +55,7 @@ nav ul li {
   list-style: none;
   display: inline-block;
   margin: 20px;
+  text-align: center;
 }
 
 nav ul li a {
