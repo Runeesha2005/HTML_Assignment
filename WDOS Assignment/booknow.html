@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>booknow</title>
+
+
+
+  <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css">
+
+
+  <link rel="stylesheet"
+    href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200">
+
+
+
+  <link rel="stylesheet" href="style/booknow.css">
+  <script src="script.js" defer></script>
+
+</head>
+
+
+<body>
+ 
+
+
+  <div class="myDiv">
+    <h1>BUY TICKETS</h1>
+  </div>
+
+
+  <p> &nbsp;</p>
+
+
+
+  
+  <div class="back">
+    <a href="hikkaduwa.html">Back to Previous page</a><br><br><br>
+  </div>
+  
+
+
+
+<div class="tableformat">
+  <table class="decoration">
+
+    <tr>
+      <th>Date</th>
+      <td  class="cell1" id="day"></td>
+
+    </tr>
+
+
+    <tr>
+      <th>Time</th>
+      <td class="cell1" id="time">7.00am to 8.00am</td>
+
+    </tr>
+
+
+    <tr>
+      <th>Duration</th>
+      <td  class="cell1" id="duration">1 hours</td>
+
+    </tr>
+
+
+
+    <tr>
+      <th>Tickets</th>
+      <td class="bold">Charge</td>
+
+    </tr>
+
+
+    <tr id="default">
+      <td class="cell1">1 Foreign Adult</td>
+      <td  class="cell1">$10</td>
+
+    </tr>
+
+
+    <tr id="sl_Adult" style="display:none;">
+      <td class="cell1" id="sl_A_Count"></td>
+      <td  class="cell1" id="sl_A_Price"></td>
+
+    </tr>
+
+
+    <tr id="sl_Child" style="display:none;">
+      <td class="cell1" id="sl_C_Count"></td>
+      <td  class="cell1" id="sl_C_Price"></td>
+    </tr>
+
+
+
+    <tr id="f_Adult" style="display:none;">
+      <td class="cell1" id="f_A_Count"></td>
+      <td  class="cell1" id="f_A_Price"></td>
+
+    </tr>
+
+
+    <tr id="f_Child" style="display:none;">
+      <td class="cell1" id="f_C_Count"></td>
+      <td  class="cell1" id="f_C_Price"></td>
+
+    </tr>
+
+
+    <tr id="infant" style="display:none;">
+      <td class="cell1" id="i_Count"></td>
+      <td  class="cell1">FREE</td>
+
+    </tr>
+
+
+    <tr>
+      <th>Total Payable</th>
+      <td id="total">$10</td>
+    </tr>
+
+  </table>
+</div>
+
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+  
+
+  <div class="words">
+    <h1>SET A DATE</h1>
+    <h1>Arrange your Unforgettable Encounter!</h1>
+  </div>
+
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+
+
+  <table class="pricetable">
+    <tr>
+      <th>Guest</th>
+      <th>Normal Hour Price</th>
+      <th>Peak Hour Price</th>
+
+    </tr>
+    
+    <tr>
+      <td>Sri Lankan Adult</td>
+      <td>4 USD</td>
+      <td>6 USD</td>
+
+    </tr>
+    <tr>
+      <td>Sri Lankan Child</td>
+      <td>2 USD</td>
+      <td>3 USD</td>
+
+    </tr>
+
+    <tr>
+      <td>Foreigner Adult</td>
+      <td>10 USD</td>
+      <td>13 USD</td>
+
+    </tr>
+    <tr>
+      <td>Foreigner Child</td>
+      <td>5 USD</td>
+      <td>8 USD</td>
+
+    </tr>
+
+    <tr>
+      <td>Infant</td>
+      <td>Free</td>
+      <td>Free</td>
+
+    </tr>
+
+  </table>
+
+
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+  <div class="position">
+    <div class="wrapper">
+      <header>
+        <p class="current-date"></p>
+        <div class="icons">
+          <span id="prev" class="material-symbols-rounded">chevron_left</span>
+          <span id="next" class="material-symbols-rounded">chevron_right</span>
+        </div>
+      </header>
+      <div class="calendar">
+        <ul class="weeks">
+          <li>Sun</li>
+          <li>Mon</li>
+          <li>Tue</li>
+          <li>Wed</li>
+          <li>Thu</li>
+          <li>Fri</li>
+          <li>Sat</li>
+        </ul>
+        <ul class="days"></ul>
+      </div>
+    </div>
+  </div>
+  
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+<div class="center-container">
+
+  <input type="checkbox" id="click1" onclick="timeSlot(),checkPeakCount()">
+  <label for="click1"><li id="box1" class="li">07.00am - 08.00am</li></label><br><br>
+
+
+  <input type="checkbox" id="click2" onclick="timeSlot(),checkPeakCount()">
+  <label for="click2"><li id="box2" class="li">08.00am - 09.00am</li></label><br><br>
+
+
+  <input type="checkbox" id="click3" onclick="timeSlot(),checkPeakCount()">
+  <label for="click3"><li id="box3" class="li">09.00am - 10.00am</li></label><br><br>
+
+
+  <input type="checkbox" id="click4" onclick="timeSlot(),checkPeakCount()">
+  <label for="click4"><li id="box4" class="li">10.00am - 11.00am</li></label><br><br>
+
+
+  <input type="checkbox" id="click5" onclick="timeSlot(),checkPeakCount()">
+  <label for="click5"><li id="box5" class="li">11.00am - 12.00pm</li></label><br><br>
+
+
+  <input type="checkbox" id="click6" onclick="timeSlot(),checkPeakCount()">
+  <label for="click6"><li id="box6" class="li">12.00am - 1.00pm</li></label><br><br>
+
+
+  <input type="checkbox" id="click7" onclick="timeSlot(),checkPeakCount()">
+  <label for="click7"><li id="box7" class="li">1.00pm - 2.00pm</li></label><br><br>
+
+
+  <input type="checkbox" id="click8" onclick="timeSlot(),checkPeakCount()">
+  <label for="click8"><li id="box8" class="li">2.00pm - 3.00pm</li></label><br><br>
+
+
+  <input type="checkbox" id="click9" onclick="timeSlot(),checkPeakCount()">
+  <label for="click9"><li id="box9" class="li">3.00pm - 4.00pm</li></label><br><br>
+
+
+  <input type="checkbox" id="click10" onclick="timeSlot(),checkPeakCount()">
+  <label for="click10"><li id="box10" class="li">4.00pm - 5.00pm</li></label><br><br>
+
+  <input type="checkbox" id="click11" onclick="timeSlot(),checkPeakCount()">
+  <label for="click11"><li id="box11" class="li">5.00pm - 6.00pm</li></label><br><br>
+
+</div>
+
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+
+  <div class="centerguests">
+    <p class="one">Sri Lankan Adult</p>
+    <p> &nbsp;</p>
+    <div class="btn1">
+    <button class="button" onclick="substraction1()"> - </button>
+    <span id="count1">&nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp; </span>
+    <button class="button" onclick="addition1()">+</button>
+  </div>
+
+
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
+
+  
+    <p>Sri Lankan Child</p>
+    <p> &nbsp;</p>
+    <div class="btn1">
+    <button class="button" onclick="substraction2()"> - </button>
+    <span id="count2"> &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp; </span>
+    <button class="button" onclick="addition2()">+</button>
+  </div>
+
+
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
+
+  
+    <p>Foreign Adult</p>
+    <p> &nbsp;</p>
+
+    <div class="btn1">
+    <button class="button" onclick="substraction3()"> - </button>
+    <span id="count3"> &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp; </span>
+    <button class="button" onclick="addition3()">+</button>
+  </div>
+
+
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
+
+ 
+    <p>Foreign Child</p>
+    <p> &nbsp;</p>
+
+    <div class="btn1">
+    <button class="button" onclick="substraction4()"> - </button>
+    <span id="count4"> &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp; </span>
+    <button class="button" onclick="addition4()">+</button>
+  </div>
+
+
+    <p> &nbsp;</p>
+    <p> &nbsp;</p>
+
+  
+    <p>Infant</p>
+
+    <p> &nbsp;</p>
+
+    <div class="btn1">
+    <button class="button" onclick="substraction5()"> - </button>
+    <span id="count5"> &nbsp;&nbsp;&nbsp;0&nbsp;&nbsp;&nbsp; </span>
+    <button class="button" onclick="addition5()">+</button>
+  </div>
+
+
+  </div>
+
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+<div class="images">
+  <img src="images/blueturtle.jpg"  >
+  
+  <img src="images/bentota3.jpg"  >
+
+  
+
+</div>
+
+
+
+<p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+
+  <div class="purchase">
+    <button onclick="setSessionStorage()"><a href="details.html">Continue with Purchase</a></button><br><br><br>
+  </div>
+ 
+
+  
+
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+  <p> &nbsp;</p>
+
+  <footer>
+    <p>Every action counts let's unite for the survival of turtles</p>
+    Copyright © 2023 | Runeesha Senadeera </p>
+  </footer>
+
+
+</body>
+
+</html>

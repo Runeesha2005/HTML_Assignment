@@ -1,0 +1,473 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+
+/*font weight guest*/
+p{
+  font-weight: 700;
+}
+
+
+/*previous page button*/
+.back a {
+  background-color: #051248;
+  color: white;
+  padding: 20px 20px;
+  text-align: center;
+  text-decoration: none;
+  border-radius: 100px;
+  display: inline-block;
+}
+
+.back a:hover,
+a:active {
+  background-color: rgb(123, 181, 239);
+}
+
+.myDiv {
+
+  font-size: 2em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30vh; 
+  width: auto;
+  background-color: #27394f;
+
+}
+
+
+.myDiv h1 {
+  margin: 0;
+  color: #f4f7f9;
+  font-size: 60px;
+  
+}
+
+
+
+
+
+/* Media query for responsiveness */
+@media(max-width: 540px) {
+  .myDiv {
+    height: 30vh; 
+    width:auto;
+    
+  }
+}
+
+
+
+.words {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center; 
+  
+  text-align: center;
+}
+
+/* Responsive font size */
+.words h1 {
+  font-size: 2em; 
+  margin: 10px 0; 
+}
+
+/* Media query for smaller screens */
+@media (max-width: 540px) {
+  .words {
+    padding: 20px; 
+  }
+}
+
+
+
+
+.position {
+
+  display: flex;
+  justify-content: center;
+  
+
+}
+
+.images{
+  display: flex;
+  justify-content: center;
+}
+
+
+.purchase{
+  display: flex;
+  justify-content: center;
+
+}
+
+
+
+body {
+
+ /* align-items: center;
+  
+  justify-content: center;
+  min-height: 100vh;*/
+  background: #819cce;
+
+  
+}
+
+.wrapper {
+  width: 450px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.12);
+}
+
+.wrapper header {
+  display: flex;
+  align-items: center;
+  padding: 25px 30px 10px;
+  justify-content: space-between;
+}
+
+header .icons {
+  display: flex;
+}
+
+header .icons span {
+  height: 38px;
+  width: 38px;
+  margin: 0 1px;
+  cursor: pointer;
+  color: #878787;
+  text-align: center;
+  line-height: 38px;
+  font-size: 1.9rem;
+  user-select: none;
+  border-radius: 50%;
+}
+
+.icons span:last-child {
+  margin-right: -10px;
+}
+
+header .icons span:hover {
+  background: #19141400;
+}
+
+header .current-date {
+  font-size: 1.45rem;
+  font-weight: 500;
+}
+
+.calendar {
+  padding: 20px;
+}
+
+.calendar ul {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  text-align: center;
+}
+
+.calendar .days {
+  margin-bottom: 20px;
+}
+
+.calendar li {
+  color: #333;
+  width: calc(100% / 7);
+  font-size: 1.07rem;
+}
+
+.calendar .weeks li {
+  font-weight: 500;
+  cursor: default;
+}
+
+.calendar .days li {
+  z-index: 1;
+  cursor: pointer;
+  position: relative;
+  margin-top: 30px;
+}
+
+.days li.inactive {
+  color: #aaa;
+}
+
+.days li.active {
+  color: #fff;
+}
+
+.days li::before {
+  position: absolute;
+  content: "";
+  left: 50%;
+  top: 50%;
+  height: 40px;
+  width: 40px;
+  z-index: -1;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.days li.active::before {
+  background: #415779;
+}
+
+.days li:not(.active):hover::before {
+  background: #b1cace;
+}
+
+
+#click1 {
+  display: none;
+}
+
+#click2 {
+  display: none;
+}
+
+#click3 {
+  display: none;
+}
+
+#click4 {
+  display: none;
+}
+
+#click5 {
+  display: none;
+}
+
+#click6 {
+  display: none;
+}
+
+#click7 {
+  display: none;
+}
+
+#click8 {
+  display: none;
+}
+
+#click9 {
+  display: none;
+}
+
+#click10 {
+  display: none;
+}
+
+#click11 {
+  display: none;
+}
+
+
+.button {
+  padding: 5px 10px;
+  border-radius: 100%;
+  background-color: rgb(32, 18, 224);
+}
+
+
+.container {
+  max-width: 400px;
+  margin: 0 auto;
+  position: absolute;
+  left: 100px;
+  margin-top: 800px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+label {
+  margin-bottom: 10px;
+}
+
+input[type="date"] {
+  padding: 5px;
+}
+
+.timeLabel {
+  cursor: pointer;
+}
+
+.li {
+  padding: 10px;
+  width: 250px;
+  background-color: #163c65;
+  color: #ebe5e5;
+  border: none;
+  cursor: pointer;
+  list-style-type: none;
+  text-align: center;
+
+  
+}
+
+
+.li:hover {
+  background-color: #628f92; /* Add a background color on hover */
+}
+
+button:hover {
+  background-color: #43637b;
+}
+
+/*price table*/
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: auto;
+}
+
+td,
+th {
+  border: 1px solid #f9f5f5;
+  text-align: left;
+  padding: 5px;
+}
+
+tr:nth-child(even) {
+  background-color: #cad0d4;
+}
+
+
+.pricetable{
+  margin:auto;
+}
+
+
+.center-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+
+}
+
+.centerguests {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.btn1{
+  display: flex;
+}
+
+.decoration {
+  border-collapse: collapse;
+  width: 100%;
+  max-width: 600px; /* Optional: Set a maximum width for the table */
+  margin: 0 auto;
+}
+
+
+
+/* Style table header */
+.decoration th {
+  background-color: #f2f2f2;
+  color: #333;
+  font-weight: bold;
+  padding: 10px 15px;
+  text-align: left;
+}
+
+/* Style table rows */
+.decoration td {
+  padding: 10px 15px;
+  border-bottom: 1px solid #ddd;
+}
+
+/* Alternate row colors */
+.decoration tbody tr {
+  background-color: #f2f2f2;
+}
+
+/* Hover effect on rows */
+.decoration tbody tr:hover {
+  background-color: #e0e0e0;
+}
+
+.decoration tbody td:hover {
+  background-color: #e0e0e0;
+}
+
+/* Center text in cells */
+.decoration th,
+.decoration td {
+  text-align: center;
+}
+
+
+.bold{
+  font-weight: bold;
+}
+
+.cell1 {
+  background-color:#a7bcd7;
+  color: white; /* Optional: Change text color for better contrast */
+}
+
+
+
+/*next page button*/
+
+.purchase a {
+  background-color: #051248;
+  color: white;
+  padding: 25px 25px;
+  border-radius: 20px;
+  text-align: center;
+ 
+  text-decoration: none;
+  display: inline-block;
+}
+
+.purchase a:hover,
+a:active {
+  background-color: rgb(123, 181, 239);
+}
+
+
+img{
+  width: 450px;
+  height: 420px;
+}
+
+
+/*FOOTER ALIGNMENT/STYLING*/
+  
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #526c8b;
+  color: rgb(12, 8, 8);
+  
+    }
+

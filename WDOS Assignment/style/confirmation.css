@@ -1,0 +1,156 @@
+/* Import Google font - Poppins */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+  }
+  
+  p{
+    font-weight: 700;
+  }
+
+  #heading{
+    font-size: 40px; 
+    text-align: center;/* Change font size to your preferred value */
+  }
+
+body {
+    font-family: Arial, sans-serif;
+    background: #819cce;
+  }
+
+
+  .myDiv {
+
+    font-size: 2em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh; 
+    width: auto;
+    background-color: #27394f;
+  
+  }
+
+  .myDiv h1 {
+    margin: 0;
+    color: #f4f7f9;
+    font-size: 60px;
+  }
+  
+
+
+  .back a {
+    background-color: #051248;
+    color: white;
+    padding: 20px 20px;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 100px;
+    display: inline-block;
+  }
+  
+  .back a:hover,
+  a:active {
+    background-color: rgb(123, 181, 239);
+  }
+
+
+  table {
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 800px;
+  }
+  
+  td,
+  th {
+    border: 1px solid #0b0808;
+    text-align: left;
+    padding: 5px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #cad0d4;
+  }
+
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    max-width: 600px; /* Optional: Set a maximum width for the table */
+    margin: 0 auto;
+  }
+  
+  /* Style table header */
+  .decoration th {
+    background-color: #f2f2f2;
+    color: #333;
+    font-weight: bold;
+    padding: 10px 15px;
+    text-align: left;
+  }
+  
+  /* Style table rows */
+  .decoration td {
+    padding: 10px 15px;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  /* Alternate row colors */
+  .decoration tbody tr {
+    background-color: #f2f2f2;
+  }
+  
+  /* Hover effect on rows */
+  .decoration tbody tr:hover {
+    background-color: #e0e0e0;
+  }
+  
+  .decoration tbody td:hover {
+    background-color: #e0e0e0;
+  }
+  
+  /* Center text in cells */
+  .decoration th,
+  .decoration td {
+    text-align: center;
+  }
+  
+  
+  .bold{
+    font-weight: bold;
+  }
+  
+  .cell1 {
+    background-color:#a7bcd7;
+    color: white; /* Optional: Change text color for better contrast */
+  }
+  
+  #confirm {
+    text-align: center;
+    color: #336666; 
+    font-size: 25px; 
+    font-weight: bold; 
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+  }
+  
+
+  /*FOOTER ALIGNMENT/STYLING*/
+  
+footer {
+  text-align: center;
+  padding: 20px;
+  background-color: #526c8b;
+  color: rgb(12, 8, 8);
+  
+    }
+
+
+  
+  
+  
+  
+    
