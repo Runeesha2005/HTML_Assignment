@@ -1,4 +1,4 @@
-if (window.location.href == "http://127.0.0.1:5500/Rnui/booknow.html") {
+if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS%20Assignment/booknow.html") {
 
     const daysTag = document.querySelector(".days"),
         currentDate = document.querySelector(".current-date"),
@@ -1510,7 +1510,7 @@ if (window.location.href == "http://127.0.0.1:5500/Rnui/booknow.html") {
 }
 
 
-if (window.location.href == "http://127.0.0.1:5500/Rnui/details.html") {
+if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS%20Assignment/details.html") {
 
 
 
@@ -1649,7 +1649,7 @@ if (window.location.href == "http://127.0.0.1:5500/Rnui/details.html") {
 
 
 
-if (window.location.href == "http://127.0.0.1:5500/Rnui/payment.html") {
+if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS%20Assignment/payment.html") {
 
 //payment page
 
@@ -1729,7 +1729,7 @@ if (window.location.href == "http://127.0.0.1:5500/Rnui/payment.html") {
     function redirectToConfirmationPage() {
         if (enablePayButton()) {
             // Redirect to confirmation page (replace 'confirmation.html' with the actual URL)
-            window.location.href = 'confirmation.html';
+            window.location.href = 'https://runeesha2005.github.io/HTML_Assignment/WDOS%20Assignment/confirmation.html';
         }
         // Prevent form submission
         return false;
@@ -1738,7 +1738,7 @@ if (window.location.href == "http://127.0.0.1:5500/Rnui/payment.html") {
 }
 
 
-if (window.location.href == "http://127.0.0.1:5500/Rnui/confirmation.html") {
+if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS%20Assignment/confirmation.html") {
 
     //confirmation page
 
