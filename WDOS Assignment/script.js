@@ -1534,6 +1534,7 @@ if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS
     document.getElementById("f_A_Price").innerText = sessionStorage.getItem("session-F_A_Price");
     document.getElementById("f_C_Price").innerText = sessionStorage.getItem("session-F_C_Price");
 
+ document.getElementById("i_Count").innerText = sessionStorage.getItem("session-I_Count");
 
 
     if (sessionStorage.getItem("session-SL_A_Cost") != 0) {
@@ -1673,6 +1674,9 @@ if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS
     document.getElementById("f_A_Price").innerText = sessionStorage.getItem("session-F_A_Price");
     document.getElementById("f_C_Price").innerText = sessionStorage.getItem("session-F_C_Price");
 
+     document.getElementById("i_Count").innerText = sessionStorage.getItem("session-I_Count");
+
+
 
     if (sessionStorage.getItem("session-SL_A_Cost") != 0) {
         document.getElementById("sl_Adult").style.display = "";
@@ -1765,6 +1769,9 @@ if (window.location.href == "https://runeesha2005.github.io/HTML_Assignment/WDOS
     document.getElementById("f_C_Count").innerText = sessionStorage.getItem("session-F_C_Count");
     document.getElementById("f_A_Price").innerText = sessionStorage.getItem("session-F_A_Price");
     document.getElementById("f_C_Price").innerText = sessionStorage.getItem("session-F_C_Price");
+
+     document.getElementById("i_Count").innerText = sessionStorage.getItem("session-I_Count");
+
 
 
     if (sessionStorage.getItem("session-SL_A_Cost") != 0) {
